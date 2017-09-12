@@ -1,0 +1,225 @@
+/* General Styles */
+html {
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+}
+
+.container {
+  max-width: 960px;
+  margin: auto;
+}
+
+/* Header Section */
+
+header {
+  background-image: url(https://s3.amazonaws.com/codecademy-content/courses/freelance-1/unit-5/tortoiseshell-optics/resources/images/glasses-bg.png);
+  height: 30rem;
+  padding-top: 1rem;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+nav {
+  background-color: cadetblue;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+  padding: 1rem 0;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+}
+
+nav img {
+  height: 1.5rem;
+  margin-left: 2rem;
+  margin-right: 1rem;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  margin-right: 1rem;
+}
+
+ul li {
+  display: inline;
+  padding: 0 1rem;
+}
+
+ul.mobile {
+  display: none;
+}
+
+.flex {
+  display: flex;
+}
+
+header .flex {
+  justify-content: flex-end;
+}
+
+.main-banner {
+  background-color: white;
+  display: inline-block;
+  margin-top: 10rem;
+  margin-right: -2rem;
+  padding: 1.5rem 5rem;
+  line-height: 2.4rem;
+}
+
+h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin: .67em 0;
+}
+
+@media only screen and (max-width: 1024px) {
+  header {
+    padding-top: 0;
+    height: 22rem;
+  }
+  nav.container {
+    max-width: 100%;
+  }
+  .main-banner {
+    margin-top: 5rem;
+    padding: 0.75rem 4rem;
+    margin-right: 2rem;
+    font-size: 1.33rem;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  header {
+    height: 17rem;
+  }
+
+  .logo span {
+    display: none;
+  }
+  ul.desktop {
+    display: none;
+  }
+  ul.mobile {
+    display: block;
+  }
+  .main-banner {
+    padding: 0 1rem;
+    margin: 9rem auto 0 auto;
+    width: 100%;
+    text-align: center;
+  }
+  .main-banner h1 {
+    font-size: 1rem;
+  }
+    )
+}
+
+/* Supporting Section */
+
+.supporting {
+  display: flex;
+  justify-content: center;
+}
+
+.service {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  width: 5rem;
+  height: 8rem;
+}
+
+.service img {
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.service img.paper-icon {
+  width: 3.5rem;
+}
+
+@media only screen and (max-width: 560px) {
+  .supporting {
+    flex-direction: column;
+    margin-top: 3rem;
+    align-items: center;
+    justify-content: flex-start;
+  }
+  .service {
+    font-size: 0.77rem;
+    height: auto;
+    margin: 0.77rem;
+  }
+}
+/* Info Section */
+
+.info {
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 4rem;
+}
+
+.info p {
+  padding: 1rem 0;
+}
+
+.title {
+  background-color: cadetblue;
+  font-size: 1rem;
+  color: white;
+  padding: 0.5rem 1.25rem;
+  max-width: 10rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 560px) {
+  .info {
+    width: auto;
+  }
+
+  .info .title {
+    width: 100%;
+    max-width: 100%;
+    text-align: center;
+  }
+  .info p {
+    font-size: 0.77rem;
+    padding: 1rem;
+  }
+}
+/* Footer Section */
+
+footer {
+  display: flex;
+  align-items: center;
+  background-color: azure;
+  padding: 4rem 2rem;
+}
+
+footer img {
+  height: 1.5rem;
+  padding-left: 2rem;
+  padding-right: 1rem;
+}
+
+div {
+  display: block;
+}
+
+@media only screen and (max-width: 560px) {
+  footer div {
+    display: none;
+  }
+  footer {
+    justify-content: center;
+  }
+}
